@@ -4,7 +4,7 @@
 #define MOISTURE_LIMIT 350 //calibrate the moisture limit here
 
 void setup() {
-  pinMode(SOIL_SENSOR_PIN, INPUT);
+  pinMode(SOILMOISTURESENSOR_PIN, INPUT);
   pinMode(PUMP_PIN, OUTPUT);
   analogWrite(PUMP_PIN, 0); //motor starts OFF - no voltage
   Serial.begin(9600);
@@ -23,4 +23,3 @@ void loop() {
   
   delay(1000); //1 second delay before the next reading.
 }
-
